@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music | Shane Harvey</title>
+  <meta name="description"
+    content="Albums and singles by composer and songwriter Shane Harvey, including For Guinevere: To Hell and Back." />
+  <meta name="theme-color" content="#0f0f0f" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/music.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header (shared: copy to every page, set aria-current on the active link) -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="index.html">SHANE HARVEY</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <span></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="film-tv.html">Film &amp; TV</a>
+        <a href="jingles.html">Jingles</a>
+        <a href="music.html" aria-current="page">Music</a>
+        <a href="about.html">About</a>
+        <button class="nav__contact" type="button" data-open-contact aria-haspopup="dialog">
+          Contact
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero page-hero--music" aria-labelledby="page-h">
+      <div class="media-fade">
+        <img src="assets/img/music-hero.jpg" alt="" width="1920" height="704" fetchpriority="high" />
+      </div>
+      <div class="container page-hero__content">
+        <div>
+          <p class="page-hero__eyebrow">Discography</p>
+          <h1 id="page-h">Music</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="album" aria-labelledby="album-h">
+      <div class="container album__inner">
+        <div class="album__visual">
+          <img class="album__cover" src="assets/img/albums/for-guinevere.jpg"
+            alt="For Guinevere: To Hell and Back album cover" width="300" height="300" />
+          <img class="album__vinyl" src="assets/img/vinyl-record.svg" alt="" width="300" height="300" />
+        </div>
+        <div class="album__body">
+          <div class="album__head">
+            <p class="album__meta">Album · Released 2018 · 13 tracks</p>
+            <h2 class="album__title" id="album-h">
+              For Guinevere: To Hell and Back
+            </h2>
+            <div class="album__actions">
+              <button class="btn btn--accent btn--lg" type="button" data-play-album>
+                Play full album
+              </button>
+              <a class="btn btn--outline btn--lg" href="https://www.youtube.com/playlist?list=PLEwRt2aX7zJrmkMFYSdMaC_ItxuzvdtNN" target="_blank" rel="noopener">YouTube</a>
+            </div>
+          </div>
+          <ol class="album-tracks" id="album-tracks">
+            <li class="album-track" data-src="assets/audio/music/guinevere/01-the-letter.mp3">
+              <span class="album-track__num">01</span>
+              <span class="album-track__title">The Letter</span>
+              <span class="album-track__time track__time">1:21</span>
+              <button class="track__play" type="button" aria-label="Play The Letter">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-src="assets/audio/music/guinevere/02-no-more-you-dont-know-what-love-is.mp3">
+              <span class="album-track__num">02</span>
+              <span class="album-track__title">No More You Don’t Know What Love Is</span>
+              <span class="album-track__time track__time">7:39</span>
+              <button class="track__play" type="button" aria-label="Play No More You Don’t Know What Love Is">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-src="assets/audio/music/guinevere/03-busted.mp3">
+              <span class="album-track__num">03</span>
+              <span class="album-track__title">Busted</span>
+              <span class="album-track__time track__time">1:40</span>
+              <button class="track__play" type="button" aria-label="Play Busted">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-src="assets/audio/music/guinevere/04-i-aint-got-nobody.mp3">
+              <span class="album-track__num">04</span>
+              <span class="album-track__title">I Ain’t Got Nobody</span>
+              <span class="album-track__time track__time">4:20</span>
+              <button class="track__play" type="button" aria-label="Play I Ain’t Got Nobody">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-src="assets/audio/music/guinevere/05-true-calling-on-the-phone.mp3">
+              <span class="album-track__num">05</span>
+              <span class="album-track__title">True Calling On The Phone</span>
+              <span class="album-track__time track__time">0:37</span>
+              <button class="track__play" type="button" aria-label="Play True Calling On The Phone">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-src="assets/audio/music/guinevere/06-im-over-you.mp3">
+              <span class="album-track__num">06</span>
+              <span class="album-track__title">I’m Over You</span>
+              <span class="album-track__time track__time">5:44</span>
+              <button class="track__play" type="button" aria-label="Play I’m Over You">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/07-this-masquerade.mp3">
+              <span class="album-track__num">07</span>
+              <span class="album-track__title">This Masquerade</span>
+              <span class="album-track__time track__time">6:30</span>
+              <button class="track__play" type="button" aria-label="Play This Masquerade">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/08-i-almost-believed-you.mp3">
+              <span class="album-track__num">08</span>
+              <span class="album-track__title">I Almost Believed You</span>
+              <span class="album-track__time track__time">4:27</span>
+              <button class="track__play" type="button" aria-label="Play I Almost Believed You">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/09-shit.mp3">
+              <span class="album-track__num">09</span>
+              <span class="album-track__title">Shit</span>
+              <span class="album-track__time track__time">0:08</span>
+              <button class="track__play" type="button" aria-label="Play Shit">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/10-sunshine-sandie.mp3">
+              <span class="album-track__num">10</span>
+              <span class="album-track__title">Sunshine (Sandle)</span>
+              <span class="album-track__time track__time">4:24</span>
+              <button class="track__play" type="button" aria-label="Play Sunshine (Sandle)">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/11-estranged.mp3">
+              <span class="album-track__num">11</span>
+              <span class="album-track__title">Estranged</span>
+              <span class="album-track__time track__time">4:59</span>
+              <button class="track__play" type="button" aria-label="Play Estranged">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/12-some-legal-advice-for-sugar.mp3">
+              <span class="album-track__num">12</span>
+              <span class="album-track__title">Some Legal Advice For Sugar</span>
+              <span class="album-track__time track__time">0:33</span>
+              <button class="track__play" type="button" aria-label="Play Some Legal Advice For Sugar">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/13-dreaming-of-a-moonlit-sonata.mp3">
+              <span class="album-track__num">13</span>
+              <span class="album-track__title">Dreaming Of A Moonlit Sonata</span>
+              <span class="album-track__time track__time">1:48</span>
+              <button class="track__play" type="button" aria-label="Play Dreaming Of A Moonlit Sonata">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/14-one-shot.mp3">
+              <span class="album-track__num">14</span>
+              <span class="album-track__title">One Shot</span>
+              <span class="album-track__time track__time">4:40</span>
+              <button class="track__play" type="button" aria-label="Play One Shot">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/15-ghost-of-guinevere.mp3">
+              <span class="album-track__num">15</span>
+              <span class="album-track__title">Ghost Of Guinevere</span>
+              <span class="album-track__time track__time">6:45</span>
+              <button class="track__play" type="button" aria-label="Play Ghost Of Guinevere">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/16-you-take-my-breath-away.mp3">
+              <span class="album-track__num">16</span>
+              <span class="album-track__title">You Take My Breath Away</span>
+              <span class="album-track__time track__time">5:05</span>
+              <button class="track__play" type="button" aria-label="Play You Take My Breath Away">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/17-the-last-interview.mp3">
+              <span class="album-track__num">17</span>
+              <span class="album-track__title">The Last Interview</span>
+              <span class="album-track__time track__time">2:05</span>
+              <button class="track__play" type="button" aria-label="Play The Last Interview">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/18-help-me.mp3">
+              <span class="album-track__num">18</span>
+              <span class="album-track__title">Help Me</span>
+              <span class="album-track__time track__time">5:19</span>
+              <button class="track__play" type="button" aria-label="Play Help Me">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                </svg>
+              </button>
+            </li>
+          </ol>
+          <button class="btn btn--outline btn--muted" type="button" aria-expanded="false"
+            data-toggle-tracks="#album-tracks">
+            See all tracks
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="singles" aria-labelledby="singles-h">
+      <div class="container">
+        <div class="singles__head">
+          <h2 id="singles-h">Singles</h2>
+          <p>Stand-alone releases</p>
+        </div>
+        <ul class="singles__grid">
+          <li class="single" data-src="">
+            <img class="single__art" src="assets/img/singles/ricky.jpg" alt="Ricky cover art" width="160" height="160"
+              loading="lazy" />
+            <div class="single__card">
+              <p class="single__badge">
+                Winner of Muchmusic Songwriting Contest
+              </p>
+              <div class="single__row">
+                <button class="track__play" type="button" aria-label="Play Ricky">
+                  <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                  </svg>
+                  <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                  </svg>
+                </button>
+                <div class="single__details">
+                  <h3 class="single__title">Ricky</h3>
+                  <p class="single__meta">
+                    <span>Indie Rock</span><a class="single__link" href="#" target="_blank" rel="noopener">Watch
+                      Music Video</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="single" data-src="">
+            <img class="single__art" src="assets/img/singles/listen-to-the-people.jpg"
+              alt="Listen To The People cover art" width="160" height="160" loading="lazy" />
+            <div class="single__card">
+              <p class="single__badge">Written For Second Harvest Food</p>
+              <div class="single__row">
+                <button class="track__play" type="button" aria-label="Play Listen To The People">
+                  <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                  </svg>
+                  <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                  </svg>
+                </button>
+                <div class="single__details">
+                  <h3 class="single__title">Listen To The People</h3>
+                  <p class="single__meta"><span>Indie Rock</span></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="single" data-src="">
+            <div class="single__art single__nocover" role="img" aria-label="No cover art">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18V6l10-2v12" />
+                <circle cx="6.5" cy="18" r="2.5" />
+                <circle cx="16.5" cy="16" r="2.5" />
+              </svg>
+              <span>No cover</span>
+            </div>
+            <div class="single__card">
+              <div class="single__row">
+                <button class="track__play" type="button" aria-label="Play Fatherson: Wanted">
+                  <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                  </svg>
+                  <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                  </svg>
+                </button>
+                <div class="single__details">
+                  <h3 class="single__title">Fatherson: Wanted</h3>
+                  <p class="single__meta"><span>Indie Rock</span></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="single" data-src="">
+            <div class="single__art single__nocover" role="img" aria-label="No cover art">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18V6l10-2v12" />
+                <circle cx="6.5" cy="18" r="2.5" />
+                <circle cx="16.5" cy="16" r="2.5" />
+              </svg>
+              <span>No cover</span>
+            </div>
+            <div class="single__card">
+              <div class="single__row">
+                <button class="track__play" type="button" aria-label="Play This Kind Of Love">
+                  <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                  </svg>
+                  <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                  </svg>
+                </button>
+                <div class="single__details">
+                  <h3 class="single__title">This Kind Of Love</h3>
+                  <p class="single__meta"><span>Indie Rock</span></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="single" data-src="">
+            <div class="single__art single__nocover" role="img" aria-label="No cover art">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18V6l10-2v12" />
+                <circle cx="6.5" cy="18" r="2.5" />
+                <circle cx="16.5" cy="16" r="2.5" />
+              </svg>
+              <span>No cover</span>
+            </div>
+            <div class="single__card">
+              <div class="single__row">
+                <button class="track__play" type="button" aria-label="Play Loves In Remission">
+                  <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                  </svg>
+                  <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                  </svg>
+                </button>
+                <div class="single__details">
+                  <h3 class="single__title">Loves In Remission</h3>
+                  <p class="single__meta"><span>Indie Rock</span></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="single" data-src="">
+            <div class="single__art single__nocover" role="img" aria-label="No cover art">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18V6l10-2v12" />
+                <circle cx="6.5" cy="18" r="2.5" />
+                <circle cx="16.5" cy="16" r="2.5" />
+              </svg>
+              <span>No cover</span>
+            </div>
+            <div class="single__card">
+              <div class="single__row">
+                <button class="track__play" type="button" aria-label="Play Till I’m Dead And Gone">
+                  <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                  </svg>
+                  <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                  </svg>
+                </button>
+                <div class="single__details">
+                  <h3 class="single__title">Till I’m Dead And Gone</h3>
+                  <p class="single__meta"><span>Indie Rock</span></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="single" data-src="">
+            <div class="single__art single__nocover" role="img" aria-label="No cover art">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18V6l10-2v12" />
+                <circle cx="6.5" cy="18" r="2.5" />
+                <circle cx="16.5" cy="16" r="2.5" />
+              </svg>
+              <span>No cover</span>
+            </div>
+            <div class="single__card">
+              <div class="single__row">
+                <button class="track__play" type="button" aria-label="Play She Was My Momma">
+                  <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                  </svg>
+                  <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                  </svg>
+                </button>
+                <div class="single__details">
+                  <h3 class="single__title">She Was My Momma</h3>
+                  <p class="single__meta"><span>Indie Rock</span></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="single" data-src="">
+            <div class="single__art single__nocover" role="img" aria-label="No cover art">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 18V6l10-2v12" />
+                <circle cx="6.5" cy="18" r="2.5" />
+                <circle cx="16.5" cy="16" r="2.5" />
+              </svg>
+              <span>No cover</span>
+            </div>
+            <div class="single__card">
+              <div class="single__row">
+                <button class="track__play" type="button" aria-label="Play Fathers Footsteps">
+                  <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                  </svg>
+                  <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                    <path d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z" fill="currentColor" />
+                  </svg>
+                </button>
+                <div class="single__details">
+                  <h3 class="single__title">Fathers Footsteps</h3>
+                  <p class="single__meta"><span>Indie Rock</span></p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (shared) -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__top">
+        <div>
+          <p class="site-footer__name">SHANE HARVEY</p>
+          <p class="site-footer__tag">
+            Composer for film, television &amp; advertising
+          </p>
+        </div>
+        <div class="site-footer__links">
+          <a href="mailto:shaneharveymusic@gmail.com">shaneharveymusic@gmail.com</a>
+          <a href="#" rel="noopener">Instagram</a>
+          <a href="#" rel="noopener">IMDb</a>
+        </div>
+      </div>
+      <p class="site-footer__legal">
+        Designed by Jacob Designs. Shane Harvey © 2026 All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>

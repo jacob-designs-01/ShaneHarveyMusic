@@ -1,0 +1,33 @@
+/* Design tokens — sourced from the Figma variables and text styles */
+:root {
+  /* Colour */
+  --bg-primary: #0f0f0f;
+  --bg-card: rgba(39, 39, 41, 0.5);
+  --border: #45454d;
+  --border-secondary: #ccc5b8; /* poster frame, outline buttons on film cards */
+  --text: #f1efea;
+  --text-muted: #b9b6ae;
+  --accent: #bf938f;        /* play button, progress */
+  --accent-strong: #913e38; /* primary buttons */
+
+  /* Typography */
+  --font-heading: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --fs-h1: clamp(2.75rem, 6vw, 4.5rem);       /* 72 */
+  --fs-h2: clamp(2rem, 4vw, 3rem);            /* 48 */
+  --fs-h3: clamp(1.5rem, 2.5vw, 2rem);        /* 32 */
+  --fs-title: 1.5rem;                         /* 24 */
+  --fs-sub: clamp(1.125rem, 1.6vw, 1.25rem);  /* 20 */
+  --fs-body: 1.125rem;                        /* 18 */
+  --fs-small: 0.875rem;                       /* 14 */
+  --fs-button: 0.9375rem;                     /* 15 */
+
+  /* Layout */
+  --container: 1360px; /* 1920 frame minus 280px side padding */
+  --gutter: clamp(20px, 5vw, 48px);
+  --section-y: clamp(72px, 10vw, 140px);
+  --header-h: 72px;
+  --radius-sm: 2px;
+  --radius-md: 8px;
+}

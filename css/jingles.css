@@ -1,0 +1,17 @@
+/* ---------- Jingles page ---------- */
+.page-hero--jingles .media-fade {
+  --fade-h: linear-gradient(90deg, rgba(15,15,15,.8) 0%, rgba(15,15,15,.15) 58.9%, rgba(145,62,56,.05) 70.2%, rgba(15,15,15,.15) 81.6%, rgba(15,15,15,.8) 100%);
+  --fade-v: linear-gradient(0deg, rgba(15,15,15,.8) 0%, rgba(145,62,56,.1) 31.4%);
+}
+
+.jingles { padding-block: var(--section-y); }
+.track-list.jingle-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; align-items: start; }
+.jingle-grid .track__meta { flex: 0 1 auto; }
+
+/* Light play button + progress fill (used on the last five rows in the design) */
+.track--award .track__play { background: var(--text); }
+.track--award .track__fill { background: var(--text); }
+
+@media (max-width: 900px) {
+  .track-list.jingle-grid { grid-template-columns: 1fr; gap: 20px; }
+}

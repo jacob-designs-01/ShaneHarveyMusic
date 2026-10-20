@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jingles | Shane Harvey</title>
+    <meta
+      name="description"
+      content="Music written for national and local advertising campaigns by composer Shane Harvey."
+    />
+    <meta name="theme-color" content="#0f0f0f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/jingles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header (shared: copy to every page, set aria-current on the active link) -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-header__logo" href="index.html">SHANE HARVEY</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Menu"
+        >
+          <span></span>
+        </button>
+        <nav class="nav" id="nav" aria-label="Main">
+          <a href="film-tv.html">Film &amp; TV</a>
+          <a href="jingles.html" aria-current="page">Jingles</a>
+          <a href="music.html">Music</a>
+          <a href="about.html">About</a>
+          <button
+            class="nav__contact"
+            type="button"
+            data-open-contact
+            aria-haspopup="dialog"
+          >
+            Contact
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero page-hero--jingles" aria-labelledby="page-h">
+        <div class="media-fade">
+          <img
+            src="assets/img/jingles-hero.jpg"
+            alt=""
+            width="1920"
+            height="704"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="container page-hero__content">
+          <div>
+            <p class="page-hero__eyebrow">Advertising</p>
+            <h1 id="page-h">Jingles</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="jingles" aria-label="Jingle list">
+        <div class="container">
+          <ul class="track-list jingle-grid">
+            <li class="track" data-src="assets/audio/jingles/papa-johns.mp3">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play Papa Johns"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">Papa Johns</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:41</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/presidents-choice.mp3">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play Presidents Choice"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">Presidents Choice</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:12</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/ufc.mp3">
+              <button class="track__play" type="button" aria-label="Play UFC">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">UFC</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:20</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/moneymart-curveball.mp3">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play MoneyMart"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">MoneyMart</span
+                ><span class="track__sub">“Curveball”</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:30</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/moneymart-a-solid-solution.mp3">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play MoneyMart"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">MoneyMart</span
+                ><span class="track__sub">“A Solid Solution”</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:30</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/moneymart-straight-up.mp3">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play MoneyMart"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">MoneyMart</span
+                ><span class="track__sub">“Straight-up”</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:30</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/cbc-walk-that-walk.mp3">
+              <button class="track__play" type="button" aria-label="Play CBC">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">CBC</span
+                ><span class="track__sub">“Walk That Walk”</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:45</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/pbs-kids.wav">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play PBS Kids"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">PBS Kids</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:10</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/save-on-foods.mp3">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play Save On Foods"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">Save On Foods</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:09</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/nfld-tel.wav">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play NFLD Tel"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">NFLD Tel</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:30</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/21st-com.wav">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play 21st.com"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">21st.com</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:32</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/wiser-locks.mp3">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play Wiser Locks"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">Wiser Locks</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:29</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/beef.m4a">
+              <button class="track__play" type="button" aria-label="Play Beef">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">Beef</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:26</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/basf-stands-tall-1&2.mp3">
+              <button class="track__play" type="button" aria-label="Play BASF">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">BASF</span
+                ><span class="track__sub">“Stands Tall 1&amp;2”</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:37</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/basf.mp3">
+              <button class="track__play" type="button" aria-label="Play BASF">
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">BASF</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:38</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/singing-impersonations.mp3">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play Singing Impersonations"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">Singing Impersonations</span
+                ><span class="track__sub">Extras</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">6:32</span>
+            </li>
+            <li class="track" data-src="assets/audio/jingles/jingles.mp3">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play Jingles"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">Jingles</span
+                ><span class="track__sub">Extras</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">6:59</span>
+            </li>
+            <li class="track track--award" data-src="">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play Dupont-telly Award"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">Dupont-telly Award</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">3:02</span>
+            </li>
+            <li class="track track" data-src="assets/audio/jingles/ford.mov">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play Ford Canada"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">Ford Canada</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">0:30</span>
+            </li>
+            <li class="track track--award" data-src="">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play Als Society"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">Als Society</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">3:02</span>
+            </li>
+            <li class="track track--award" data-src="">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play Blacks"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title">Blacks</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">3:02</span>
+            </li>
+            <li class="track track--award" data-src="">
+              <button
+                class="track__play"
+                type="button"
+                aria-label="Play Wolverine Clothing Buy And Sell Newspaper"
+              >
+                <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 12 12" aria-hidden="true">
+                  <path
+                    d="M2.5 1h2.8v10H2.5zM6.7 1h2.8v10H6.7z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+              <div class="track__meta">
+                <span class="track__title"
+                  >Wolverine Clothing Buy And Sell Newspaper</span
+                ><span class="track__sub">Ad Campaign</span>
+              </div>
+              <div
+                class="track__bar"
+                role="progressbar"
+                aria-label="Progress"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="0"
+              >
+                <span class="track__fill"></span>
+              </div>
+              <span class="track__time">3:02</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (shared) -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__top">
+          <div>
+            <p class="site-footer__name">SHANE HARVEY</p>
+            <p class="site-footer__tag">
+              Composer for film, television &amp; advertising
+            </p>
+          </div>
+          <div class="site-footer__links">
+            <a href="mailto:shaneharveymusic@gmail.com"
+              >shaneharveymusic@gmail.com</a
+            >
+            <a href="#" rel="noopener">Instagram</a>
+            <a href="#" rel="noopener">IMDb</a>
+          </div>
+        </div>
+        <p class="site-footer__legal">
+          Designed by Jacob Designs. Shane Harvey © 2026 All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
