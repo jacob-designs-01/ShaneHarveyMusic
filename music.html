@@ -43,7 +43,7 @@
   <main id="main">
     <section class="page-hero page-hero--music" aria-labelledby="page-h">
       <div class="media-fade">
-        <img src="assets/img/music-hero.jpg" alt="" width="1920" height="704" fetchpriority="high" />
+        <img src="assets/img/music-hero.jpg" alt="" width="1920" height="704" fetchpriority="high" style="object-position: right 7.9%;"/>
       </div>
       <div class="container page-hero__content">
         <div>
@@ -70,7 +70,9 @@
               <button class="btn btn--accent btn--lg" type="button" data-play-album>
                 Play full album
               </button>
-              <a class="btn btn--outline btn--lg" href="https://www.youtube.com/playlist?list=PLEwRt2aX7zJrmkMFYSdMaC_ItxuzvdtNN" target="_blank" rel="noopener">YouTube</a>
+              <a class="btn btn--outline btn--lg"
+                href="https://www.youtube.com/playlist?list=PLEwRt2aX7zJrmkMFYSdMaC_ItxuzvdtNN" target="_blank"
+                rel="noopener">YouTube</a>
             </div>
           </div>
           <ol class="album-tracks" id="album-tracks">
@@ -165,7 +167,8 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/08-i-almost-believed-you.mp3">
+            <li class="album-track" data-extra hidden
+              data-src="assets/audio/music/guinevere/08-i-almost-believed-you.mp3">
               <span class="album-track__num">08</span>
               <span class="album-track__title">I Almost Believed You</span>
               <span class="album-track__time track__time">4:27</span>
@@ -217,7 +220,8 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/12-some-legal-advice-for-sugar.mp3">
+            <li class="album-track" data-extra hidden
+              data-src="assets/audio/music/guinevere/12-some-legal-advice-for-sugar.mp3">
               <span class="album-track__num">12</span>
               <span class="album-track__title">Some Legal Advice For Sugar</span>
               <span class="album-track__time track__time">0:33</span>
@@ -230,7 +234,8 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/13-dreaming-of-a-moonlit-sonata.mp3">
+            <li class="album-track" data-extra hidden
+              data-src="assets/audio/music/guinevere/13-dreaming-of-a-moonlit-sonata.mp3">
               <span class="album-track__num">13</span>
               <span class="album-track__title">Dreaming Of A Moonlit Sonata</span>
               <span class="album-track__time track__time">1:48</span>
@@ -269,7 +274,8 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/16-you-take-my-breath-away.mp3">
+            <li class="album-track" data-extra hidden
+              data-src="assets/audio/music/guinevere/16-you-take-my-breath-away.mp3">
               <span class="album-track__num">16</span>
               <span class="album-track__title">You Take My Breath Away</span>
               <span class="album-track__time track__time">5:05</span>
@@ -343,8 +349,8 @@
                 <div class="single__details">
                   <h3 class="single__title">Ricky</h3>
                   <p class="single__meta">
-                    <span>Indie Rock</span><a class="single__link" href="#" target="_blank" rel="noopener">Watch
-                      Music Video</a>
+                    <span>Indie Rock</span>
+                    <a class="single__link" href="https://www.youtube.com/embed/CKjSj0OTxUY">Watch Music Video</a>
                   </p>
                 </div>
               </div>
@@ -372,15 +378,8 @@
             </div>
           </li>
           <li class="single" data-src="">
-            <div class="single__art single__nocover" role="img" aria-label="No cover art">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" aria-hidden="true">
-                <path d="M9 18V6l10-2v12" />
-                <circle cx="6.5" cy="18" r="2.5" />
-                <circle cx="16.5" cy="16" r="2.5" />
-              </svg>
-              <span>No cover</span>
-            </div>
+            <img class="single__art" src="assets/img/singles/fatherson.jpg" alt="Listen To The People cover art"
+              width="160" height="160" loading="lazy" />
             <div class="single__card">
               <div class="single__row">
                 <button class="track__play" type="button" aria-label="Play Fatherson: Wanted">
@@ -399,15 +398,8 @@
             </div>
           </li>
           <li class="single" data-src="">
-            <div class="single__art single__nocover" role="img" aria-label="No cover art">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                stroke-linejoin="round" aria-hidden="true">
-                <path d="M9 18V6l10-2v12" />
-                <circle cx="6.5" cy="18" r="2.5" />
-                <circle cx="16.5" cy="16" r="2.5" />
-              </svg>
-              <span>No cover</span>
-            </div>
+            <img class="single__art" src="assets/img/singles/this-kind-of-love.jpg" alt="Listen To The People cover art"
+              width="160" height="160" loading="lazy" />
             <div class="single__card">
               <div class="single__row">
                 <button class="track__play" type="button" aria-label="Play This Kind Of Love">
@@ -549,9 +541,9 @@
           </p>
         </div>
         <div class="site-footer__links">
+          <a href="tel:+48577953260">+48 577 953 260</a>
           <a href="mailto:shaneharveymusic@gmail.com">shaneharveymusic@gmail.com</a>
-          <a href="#" rel="noopener">Instagram</a>
-          <a href="#" rel="noopener">IMDb</a>
+          <a href="https://bsky.app/profile/shaneharvey.bsky.social" rel="noopener">Bluesky</a>
         </div>
       </div>
       <p class="site-footer__legal">
@@ -561,6 +553,7 @@
   </footer>
 
   <script src="js/main.js" defer></script>
+  <script src="js/films.js" defer></script>
 </body>
 
 </html>

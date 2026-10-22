@@ -8,10 +8,6 @@
 .track-list.jingle-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; align-items: start; }
 .jingle-grid .track__meta { flex: 0 1 auto; }
 
-/* Light play button + progress fill (used on the last five rows in the design) */
-.track--award .track__play { background: var(--text); }
-.track--award .track__fill { background: var(--text); }
-
 @media (max-width: 900px) {
   .track-list.jingle-grid { grid-template-columns: 1fr; gap: 20px; }
 }

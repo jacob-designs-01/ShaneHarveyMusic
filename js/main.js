@@ -27,7 +27,14 @@ document.querySelectorAll('.track, .album-track, .single').forEach(item => {
       audio = new Audio(src);
       audio.preload = 'none';
       audio.addEventListener('loadedmetadata', () => { if (time) time.textContent = fmt(audio.duration); });
+
+      // Update remaining time as the audio plays
       audio.addEventListener('timeupdate', () => {
+        const remaining = Math.max(0, (audio.duration || 0) - audio.currentTime);
+        if (time && audio.duration) {
+          time.textContent = fmt(remaining);
+        }
+
         const pct = (audio.currentTime / audio.duration) * 100 || 0;
         if (fill) fill.style.width = pct + '%';
         if (bar) bar.setAttribute('aria-valuenow', Math.round(pct));
@@ -48,10 +55,61 @@ document.querySelectorAll('.track, .album-track, .single').forEach(item => {
   });
 
   if (bar) {
-    bar.addEventListener('click', e => {
+    let seeking = false;
+
+    const seek = (e) => {
       if (!audio || !audio.duration) return;
       const r = bar.getBoundingClientRect();
-      audio.currentTime = ((e.clientX - r.left) / r.width) * audio.duration;
+      
+      if (current && current !== audio) current.pause();
+      current = audio;
+      if (audio.paused) audio.play();
+      
+      // Support both touch and mouse events
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      let pct = (clientX - r.left) / r.width;
+      pct = Math.max(0, Math.min(1, pct));
+      audio.currentTime = pct * audio.duration;
+    };
+
+    bar.addEventListener('mousedown', (e) => {
+      if (!audio || !audio.duration) return;
+      seeking = true;
+      seek(e);
+      document.body.style.userSelect = 'none';
+    });
+
+    bar.addEventListener('touchstart', (e) => {
+      if (!audio || !audio.duration) return;
+      seeking = true;
+      seek(e);
+      document.body.style.userSelect = 'none';
+      e.preventDefault();
+    }, { passive: false });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!seeking) return;
+      seek(e);
+    });
+
+    window.addEventListener('touchmove', (e) => {
+      if (!seeking) return;
+      seek(e);
+      e.preventDefault();
+    }, { passive: false });
+
+    window.addEventListener('mouseup', () => {
+      if (seeking) {
+        seeking = false;
+        document.body.style.userSelect = '';
+      }
+    });
+
+    window.addEventListener('touchend', () => {
+      if (seeking) {
+        seeking = false;
+        document.body.style.userSelect = '';
+      }
     });
   }
 });
@@ -188,7 +246,7 @@ function buildContact() {
           <img src="assets/img/contact-qr.svg" alt="QR code linking to this contact card" width="200" height="200">
           <p>Scan to open this card on your phone</p>
         </div>
-        ${standalone ? '' : '<a class="contact-fullscreen" href="contact.html">Open as full-screen card ↗</a>'}
+        ${standalone ? '<a class="contact-fullscreen" href="/">Back to home screen ↗</a>' : '<a class="contact-fullscreen" href="contact.html">Open as full-screen card ↗</a>'}
         <p class="sr-only" role="status" aria-live="polite" data-status></p>
       </div>
     </div>`;
@@ -211,7 +269,7 @@ function buildContact() {
         copy.textContent = 'Copied';
         d.querySelector('[data-status]').textContent = `${copy.dataset.copy} copied to clipboard`;
         setTimeout(() => { copy.textContent = 'Copy'; }, 1600);
-      }).catch(() => {});
+      }).catch(() => { });
     }
   });
   d.addEventListener('close', () => {
