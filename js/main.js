@@ -246,7 +246,7 @@ function buildContact() {
           <img src="../assets/svg/contact-qr.svg" alt="QR code linking to this contact card" width="200" height="200">
           <p>Scan to open this card on your phone</p>
         </div>
-        ${standalone ? '<a class="contact-fullscreen" href="/">Back to home screen ↗</a>' : '<a class="contact-fullscreen" href="/contact">Open as full-screen card ↗</a>'}
+        ${standalone ? '<a class="contact-fullscreen" href="/">Back to home screen ↗</a>' : '<a class="contact-fullscreen" href="../contact">Open as full-screen card ↗</a>'}
         <p class="sr-only" role="status" aria-live="polite" data-status></p>
       </div>
     </div>`;
