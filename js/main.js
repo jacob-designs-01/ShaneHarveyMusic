@@ -219,7 +219,7 @@ function buildContact() {
       <button class="contact-card__close" type="button" data-close aria-label="Close">${X_ICON}</button>
       <div class="contact-card__banner">
         <div class="media-fade contact-card__media">
-          <img src="assets/img/contact-portrait.jpg" alt="">
+          <img src="../assets/img/contact-portrait.jpg" alt="">
         </div>
       </div>
       <div class="contact-card__body">
@@ -243,10 +243,10 @@ function buildContact() {
           <button class="btn btn--outline" type="button" data-qr aria-expanded="false">Show QR</button>
         </div>
         <div class="contact-qr" hidden>
-          <img src="assets/img/contact-qr.svg" alt="QR code linking to this contact card" width="200" height="200">
+          <img src="../assets/svg/contact-qr.svg" alt="QR code linking to this contact card" width="200" height="200">
           <p>Scan to open this card on your phone</p>
         </div>
-        ${standalone ? '<a class="contact-fullscreen" href="/">Back to home screen ↗</a>' : '<a class="contact-fullscreen" href="contact.html">Open as full-screen card ↗</a>'}
+        ${standalone ? '<a class="contact-fullscreen" href="/">Back to home screen ↗</a>' : '<a class="contact-fullscreen" href="/contact">Open as full-screen card ↗</a>'}
         <p class="sr-only" role="status" aria-live="polite" data-status></p>
       </div>
     </div>`;

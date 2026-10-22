@@ -13,9 +13,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/tokens.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/film.css" />
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/film.css" />
 </head>
 
 <body>
@@ -24,15 +24,17 @@
   <!-- Header (shared: copy to every page, set aria-current on the active link) -->
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="site-header__logo" href="index.html">SHANE HARVEY</a>
+      <a class="site-header__logo" href="/">SHANE HARVEY</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
         <span></span>
       </button>
       <nav class="nav" id="nav" aria-label="Main">
-        <a href="film-tv.html" aria-current="page">Film &amp; TV</a>
-        <a href="jingles.html">Jingles</a>
-        <a href="music.html">Music</a>
-        <a href="about.html">About</a>
+        <a href="/film-tv" aria-current="page">Film &amp; TV</a>
+        <a href="/jingles">Jingles</a>
+        <a href="/music">Music</a>
+        <a href="/about">About</a>
+        <a href="/about#gallery">Gallery</a>
+  
         <button class="nav__contact" type="button" data-open-contact aria-haspopup="dialog">
           Contact
         </button>
@@ -43,7 +45,7 @@
   <main id="main">
     <section class="page-hero page-hero--film" aria-labelledby="page-h">
       <div class="media-fade">
-        <img src="assets/img/film-hero.jpg" alt="" width="1920" height="704" fetchpriority="high" />
+        <img src="../assets/img/film-hero.jpg" alt="" width="1920" height="704" fetchpriority="high" />
       </div>
       <div class="container page-hero__content">
         <div>
@@ -58,7 +60,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/uklad-zamkniety/main-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/uklad-zamkniety/main-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Main Theme from Uklad Zamkniety">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -76,7 +78,7 @@
                   <span class="track__fill"></span>
                 </div>
               </li>
-              <li class="track track--cue" data-src="assets/audio/film/uklad-zamkniety/oh-brother.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/uklad-zamkniety/oh-brother.mp3">
                 <button class="track__play" type="button" aria-label="Play “Oh brother” from Uklad Zamkniety">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -94,7 +96,7 @@
                   <span class="track__fill"></span>
                 </div>
               </li>
-              <li class="track track--cue" data-src="assets/audio/film/uklad-zamkniety/so-thats-it.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/uklad-zamkniety/so-thats-it.mp3">
                 <button class="track__play" type="button" aria-label="Play “So That's It” from Uklad Zamkniety">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -112,7 +114,7 @@
                   <span class="track__fill"></span>
                 </div>
               </li>
-              <li class="track track--cue" data-src="assets/audio/film/uklad-zamkniety/i-will-always-love-you.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/uklad-zamkniety/i-will-always-love-you.mp3">
                 <button class="track__play" type="button"
                   aria-label="Play “I Will Always Love You” from Uklad Zamkniety">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
@@ -136,7 +138,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/uklad-zamkniety.jpg" alt="Uklad Zamkniety poster" width="135" height="200"
+              <img src="../assets/img/posters/uklad-zamkniety.jpg" alt="Uklad Zamkniety poster" width="135" height="200"
                 loading="lazy" />
             </figure>
             <div class="film-card__text">
@@ -153,7 +155,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/zacma/main-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/zacma/main-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Main Theme from Zacma">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -176,7 +178,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/zacma.jpg" alt="Zacma poster" width="135" height="200" loading="lazy" />
+              <img src="../assets/img/posters/zacma.jpg" alt="Zacma poster" width="135" height="200" loading="lazy" />
             </figure>
             <div class="film-card__text">
               <p class="film-card__meta">2016 · Composer</p>
@@ -192,7 +194,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/clear-cut/main-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/clear-cut/main-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Main Theme from Clear Cut">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -215,7 +217,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/clear-cut.jpg" alt="Clear Cut poster" width="135" height="200"
+              <img src="../assets/img/posters/clear-cut.jpg" alt="Clear Cut poster" width="135" height="200"
                 loading="lazy" />
             </figure>
             <div class="film-card__text">
@@ -232,7 +234,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/final-destination-3/main-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/final-destination-3/main-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Main Theme from Final Destination 3">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -250,7 +252,7 @@
                   <span class="track__fill"></span>
                 </div>
               </li>
-              <li class="track track--cue" data-src="assets/audio/film/final-destination-3/got-a-hold-on-me.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/final-destination-3/got-a-hold-on-me.mp3">
                 <button class="track__play" type="button" aria-label="Play “Got A Hold On Me” from Final Destination 3">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -273,7 +275,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/final-destination-3.jpg" alt="Final Destination 3 poster" width="135"
+              <img src="../assets/img/posters/final-destination-3.jpg" alt="Final Destination 3 poster" width="135"
                 height="200" loading="lazy" />
             </figure>
             <div class="film-card__text">
@@ -290,7 +292,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/middlemen/main-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/middlemen/main-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Main Theme from Middlemen">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -308,7 +310,7 @@
                   <span class="track__fill"></span>
                 </div>
               </li>
-              <li class="track track--cue" data-src="assets/audio/film/middlemen/opening-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/middlemen/opening-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Opening Theme from Middlemen">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -331,7 +333,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/middlemen.jpg" alt="Middlemen poster" width="135" height="200"
+              <img src="../assets/img/posters/middlemen.jpg" alt="Middlemen poster" width="135" height="200"
                 loading="lazy" />
             </figure>
             <div class="film-card__text">
@@ -348,7 +350,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/general-nil/main-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/general-nil/main-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Main Theme from General Nil">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -366,7 +368,7 @@
                   <span class="track__fill"></span>
                 </div>
               </li>
-              <li class="track track--cue" data-src="assets/audio/film/general-nil/opening-credits.wav">
+              <li class="track track--cue" data-src="../assets/audio/film/general-nil/opening-credits.wav">
                 <button class="track__play" type="button" aria-label="Play Opening Credits from General Nil">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -389,7 +391,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/general-nil.jpg" alt="General Nil poster" width="135" height="200"
+              <img src="../assets/img/posters/general-nil.jpg" alt="General Nil poster" width="135" height="200"
                 loading="lazy" />
             </figure>
             <div class="film-card__text">
@@ -406,7 +408,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/paper-promises/main-theme.wav">
+              <li class="track track--cue" data-src="../assets/audio/film/paper-promises/main-theme.wav">
                 <button class="track__play" type="button" aria-label="Play Main Theme from Paper Promises">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -432,7 +434,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/paper-promises.jpg" alt="Paper Promises poster" width="135" height="200"
+              <img src="../assets/img/posters/paper-promises.jpg" alt="Paper Promises poster" width="135" height="200"
                 loading="lazy" />
             </figure>
             <div class="film-card__text">
@@ -449,7 +451,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/the-rhino-brothers/main-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/the-rhino-brothers/main-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Main Theme from The Rhino Brothers">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -467,7 +469,7 @@
                   <span class="track__fill"></span>
                 </div>
               </li>
-              <li class="track track--cue" data-src="assets/audio/film/the-rhino-brothers/closing-credits.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/the-rhino-brothers/closing-credits.mp3">
                 <button class="track__play" type="button" aria-label="Play Closing Credits from The Rhino Brothers">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -490,7 +492,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/the-rhino-brothers.jpg" alt="The Rhino Brothers poster" width="135"
+              <img src="../assets/img/posters/the-rhino-brothers.jpg" alt="The Rhino Brothers poster" width="135"
                 height="200" loading="lazy" />
             </figure>
             <div class="film-card__text">
@@ -507,7 +509,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/gracze/main-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/gracze/main-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Main Theme from Gracze">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -525,7 +527,7 @@
                   <span class="track__fill"></span>
                 </div>
               </li>
-              <li class="track track--cue" data-src="assets/audio/film/gracze/opening-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/gracze/opening-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Opening Theme from Gracze">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -548,7 +550,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/gracze.jpg" alt="Gracze poster" width="135" height="200" loading="lazy" />
+              <img src="../assets/img/posters/gracze.jpg" alt="Gracze poster" width="135" height="200" loading="lazy" />
             </figure>
             <div class="film-card__text">
               <p class="film-card__meta">1995 · Composer</p>
@@ -564,7 +566,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/the-shower/found-out.m4a">
+              <li class="track track--cue" data-src="../assets/audio/film/the-shower/found-out.m4a">
                 <button class="track__play" type="button" aria-label="Play “Found Out” from The Shower">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -587,7 +589,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/the-shower.jpg" alt="The Shower poster" width="135" height="200"
+              <img src="../assets/img/posters/the-shower.jpg" alt="The Shower poster" width="135" height="200"
                 loading="lazy" />
             </figure>
             <div class="film-card__text">
@@ -604,7 +606,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/looking-is-the-original-sin/main-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/looking-is-the-original-sin/main-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Main Theme from Looking is the Original Sin">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -627,7 +629,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/looking-is-the-original-sin.jpg" alt="Looking is the Original Sin poster"
+              <img src="../assets/img/posters/looking-is-the-original-sin.jpg" alt="Looking is the Original Sin poster"
                 width="135" height="200" loading="lazy" />
             </figure>
             <div class="film-card__text">
@@ -644,7 +646,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/the-first-snowfall/opening-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/the-first-snowfall/opening-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Opening Theme from The First Snowfall">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -662,7 +664,7 @@
                   <span class="track__fill"></span>
                 </div>
               </li>
-              <li class="track track--cue" data-src="assets/audio/film/the-first-snowfall/cue.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/the-first-snowfall/cue.mp3">
                 <button class="track__play" type="button" aria-label="Play Cue from The First Snowfall">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -685,7 +687,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/the-first-snowfall.jpg" alt="The First Snowfall poster" width="135"
+              <img src="../assets/img/posters/the-first-snowfall.jpg" alt="The First Snowfall poster" width="135"
                 height="200" loading="lazy" />
             </figure>
             <div class="film-card__text">
@@ -703,7 +705,7 @@
         <article class="film-card">
           <div class="film-card__cues">
             <ul class="track-list">
-              <li class="track track--cue" data-src="assets/audio/film/a-promise-broken/main-theme.mp3">
+              <li class="track track--cue" data-src="../assets/audio/film/a-promise-broken/main-theme.mp3">
                 <button class="track__play" type="button" aria-label="Play Main Theme from A Promise Broken">
                   <svg class="icon-play" viewBox="0 0 12 12" aria-hidden="true">
                     <path d="M2.5 1v10l8.5-5z" fill="currentColor" />
@@ -726,7 +728,7 @@
           </div>
           <div class="film-card__info">
             <figure class="film-card__poster">
-              <img src="assets/img/posters/a-promise-broken.jpg" alt="A Promise Broken poster" width="135" height="200"
+              <img src="../assets/img/posters/a-promise-broken.jpg" alt="A Promise Broken poster" width="135" height="200"
                 loading="lazy" />
             </figure>
             <div class="film-card__text">
@@ -769,8 +771,8 @@
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
-  <script src="js/films.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/films.js" defer></script>
 </body>
 
 </html>

@@ -13,9 +13,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/tokens.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/music.css" />
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/music.css" />
 </head>
 
 <body>
@@ -24,15 +24,17 @@
   <!-- Header (shared: copy to every page, set aria-current on the active link) -->
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="site-header__logo" href="index.html">SHANE HARVEY</a>
+      <a class="site-header__logo" href="/">SHANE HARVEY</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
         <span></span>
       </button>
       <nav class="nav" id="nav" aria-label="Main">
-        <a href="film-tv.html">Film &amp; TV</a>
-        <a href="jingles.html">Jingles</a>
-        <a href="music.html" aria-current="page">Music</a>
-        <a href="about.html">About</a>
+        <a href="/film-tv">Film &amp; TV</a>
+        <a href="/jingles">Jingles</a>
+        <a href="/music" aria-current="page">Music</a>
+        <a href="/about">About</a>
+        <a href="/about#gallery">Gallery</a>
+  
         <button class="nav__contact" type="button" data-open-contact aria-haspopup="dialog">
           Contact
         </button>
@@ -43,7 +45,7 @@
   <main id="main">
     <section class="page-hero page-hero--music" aria-labelledby="page-h">
       <div class="media-fade">
-        <img src="assets/img/music-hero.jpg" alt="" width="1920" height="704" fetchpriority="high"
+        <img src="../assets/img/music-hero.jpg" alt="" width="1920" height="704" fetchpriority="high"
           style="object-position: 95% 8%;" />
       </div>
       <div class="container page-hero__content">
@@ -57,9 +59,9 @@
     <section class="album" aria-labelledby="album-h">
       <div class="container album__inner">
         <div class="album__visual">
-          <img class="album__cover" src="assets/img/albums/for-guinevere.jpg"
+          <img class="album__cover" src="../assets/img/albums/for-guinevere.jpg"
             alt="For Guinevere: To Hell and Back album cover" width="300" height="300" />
-          <img class="album__vinyl" src="assets/img/vinyl-record.svg" alt="" width="300" height="300" />
+          <img class="album__vinyl" src="../assets/img/vinyl-record.svg" alt="" width="300" height="300" />
         </div>
         <div class="album__body">
           <div class="album__head">
@@ -78,7 +80,7 @@
             </div>
           </div>
           <ol class="album-tracks" id="album-tracks">
-            <li class="album-track" data-src="assets/audio/music/guinevere/01-the-letter.mp3">
+            <li class="album-track" data-src="../assets/audio/music/guinevere/01-the-letter.mp3">
               <span class="album-track__num">01</span>
               <span class="album-track__title">The Letter</span>
               <span class="album-track__time track__time">1:21</span>
@@ -91,7 +93,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-src="assets/audio/music/guinevere/02-no-more-you-dont-know-what-love-is.mp3">
+            <li class="album-track" data-src="../assets/audio/music/guinevere/02-no-more-you-dont-know-what-love-is.mp3">
               <span class="album-track__num">02</span>
               <span class="album-track__title">No More You Don’t Know What Love Is</span>
               <span class="album-track__time track__time">7:39</span>
@@ -104,7 +106,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-src="assets/audio/music/guinevere/03-busted.mp3">
+            <li class="album-track" data-src="../assets/audio/music/guinevere/03-busted.mp3">
               <span class="album-track__num">03</span>
               <span class="album-track__title">Busted</span>
               <span class="album-track__time track__time">1:40</span>
@@ -117,7 +119,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-src="assets/audio/music/guinevere/04-i-aint-got-nobody.mp3">
+            <li class="album-track" data-src="../assets/audio/music/guinevere/04-i-aint-got-nobody.mp3">
               <span class="album-track__num">04</span>
               <span class="album-track__title">I Ain’t Got Nobody</span>
               <span class="album-track__time track__time">4:20</span>
@@ -130,7 +132,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-src="assets/audio/music/guinevere/05-true-calling-on-the-phone.mp3">
+            <li class="album-track" data-src="../assets/audio/music/guinevere/05-true-calling-on-the-phone.mp3">
               <span class="album-track__num">05</span>
               <span class="album-track__title">True Calling On The Phone</span>
               <span class="album-track__time track__time">0:37</span>
@@ -143,7 +145,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-src="assets/audio/music/guinevere/06-im-over-you.mp3">
+            <li class="album-track" data-src="../assets/audio/music/guinevere/06-im-over-you.mp3">
               <span class="album-track__num">06</span>
               <span class="album-track__title">I’m Over You</span>
               <span class="album-track__time track__time">5:44</span>
@@ -156,7 +158,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/07-this-masquerade.mp3">
+            <li class="album-track" data-extra hidden data-src="../assets/audio/music/guinevere/07-this-masquerade.mp3">
               <span class="album-track__num">07</span>
               <span class="album-track__title">This Masquerade</span>
               <span class="album-track__time track__time">6:30</span>
@@ -170,7 +172,7 @@
               </button>
             </li>
             <li class="album-track" data-extra hidden
-              data-src="assets/audio/music/guinevere/08-i-almost-believed-you.mp3">
+              data-src="../assets/audio/music/guinevere/08-i-almost-believed-you.mp3">
               <span class="album-track__num">08</span>
               <span class="album-track__title">I Almost Believed You</span>
               <span class="album-track__time track__time">4:27</span>
@@ -183,7 +185,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/09-shit.mp3">
+            <li class="album-track" data-extra hidden data-src="../assets/audio/music/guinevere/09-shit.mp3">
               <span class="album-track__num">09</span>
               <span class="album-track__title">Shit</span>
               <span class="album-track__time track__time">0:08</span>
@@ -196,7 +198,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/10-sunshine-sandie.mp3">
+            <li class="album-track" data-extra hidden data-src="../assets/audio/music/guinevere/10-sunshine-sandie.mp3">
               <span class="album-track__num">10</span>
               <span class="album-track__title">Sunshine (Sandle)</span>
               <span class="album-track__time track__time">4:24</span>
@@ -209,7 +211,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/11-estranged.mp3">
+            <li class="album-track" data-extra hidden data-src="../assets/audio/music/guinevere/11-estranged.mp3">
               <span class="album-track__num">11</span>
               <span class="album-track__title">Estranged</span>
               <span class="album-track__time track__time">4:59</span>
@@ -223,7 +225,7 @@
               </button>
             </li>
             <li class="album-track" data-extra hidden
-              data-src="assets/audio/music/guinevere/12-some-legal-advice-for-sugar.mp3">
+              data-src="../assets/audio/music/guinevere/12-some-legal-advice-for-sugar.mp3">
               <span class="album-track__num">12</span>
               <span class="album-track__title">Some Legal Advice For Sugar</span>
               <span class="album-track__time track__time">0:33</span>
@@ -237,7 +239,7 @@
               </button>
             </li>
             <li class="album-track" data-extra hidden
-              data-src="assets/audio/music/guinevere/13-dreaming-of-a-moonlit-sonata.mp3">
+              data-src="../assets/audio/music/guinevere/13-dreaming-of-a-moonlit-sonata.mp3">
               <span class="album-track__num">13</span>
               <span class="album-track__title">Dreaming Of A Moonlit Sonata</span>
               <span class="album-track__time track__time">1:48</span>
@@ -250,7 +252,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/14-one-shot.mp3">
+            <li class="album-track" data-extra hidden data-src="../assets/audio/music/guinevere/14-one-shot.mp3">
               <span class="album-track__num">14</span>
               <span class="album-track__title">One Shot</span>
               <span class="album-track__time track__time">4:40</span>
@@ -263,7 +265,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/15-ghost-of-guinevere.mp3">
+            <li class="album-track" data-extra hidden data-src="../assets/audio/music/guinevere/15-ghost-of-guinevere.mp3">
               <span class="album-track__num">15</span>
               <span class="album-track__title">Ghost Of Guinevere</span>
               <span class="album-track__time track__time">6:45</span>
@@ -277,7 +279,7 @@
               </button>
             </li>
             <li class="album-track" data-extra hidden
-              data-src="assets/audio/music/guinevere/16-you-take-my-breath-away.mp3">
+              data-src="../assets/audio/music/guinevere/16-you-take-my-breath-away.mp3">
               <span class="album-track__num">16</span>
               <span class="album-track__title">You Take My Breath Away</span>
               <span class="album-track__time track__time">5:05</span>
@@ -290,7 +292,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/17-the-last-interview.mp3">
+            <li class="album-track" data-extra hidden data-src="../assets/audio/music/guinevere/17-the-last-interview.mp3">
               <span class="album-track__num">17</span>
               <span class="album-track__title">The Last Interview</span>
               <span class="album-track__time track__time">2:05</span>
@@ -303,7 +305,7 @@
                 </svg>
               </button>
             </li>
-            <li class="album-track" data-extra hidden data-src="assets/audio/music/guinevere/18-help-me.mp3">
+            <li class="album-track" data-extra hidden data-src="../assets/audio/music/guinevere/18-help-me.mp3">
               <span class="album-track__num">18</span>
               <span class="album-track__title">Help Me</span>
               <span class="album-track__time track__time">5:19</span>
@@ -333,7 +335,7 @@
         </div>
         <ul class="singles__grid">
           <li class="single" data-src="">
-            <img class="single__art" src="assets/img/singles/ricky.jpg" alt="Ricky cover art" width="160" height="160"
+            <img class="single__art" src="../assets/img/singles/ricky.jpg" alt="Ricky cover art" width="160" height="160"
               loading="lazy" />
             <div class="single__card">
               <p class="single__badge">
@@ -359,7 +361,7 @@
             </div>
           </li>
           <li class="single" data-src="">
-            <img class="single__art" src="assets/img/singles/listen-to-the-people.jpg"
+            <img class="single__art" src="../assets/img/singles/listen-to-the-people.jpg"
               alt="Listen To The People cover art" width="160" height="160" loading="lazy" />
             <div class="single__card">
               <p class="single__badge">Written For Second Harvest Food</p>
@@ -380,7 +382,7 @@
             </div>
           </li>
           <li class="single" data-src="">
-            <img class="single__art" src="assets/img/singles/this-kind-of-love.jpg" alt="Listen To The People cover art"
+            <img class="single__art" src="../assets/img/singles/this-kind-of-love.jpg" alt="Listen To The People cover art"
               width="160" height="160" loading="lazy" />
             <div class="single__card">
               <div class="single__row">
@@ -400,7 +402,7 @@
             </div>
           </li>
           <li class="single" data-src="">
-            <img class="single__art" src="assets/img/singles/this-kind-of-love.jpg" alt="Love In Remission cover art"
+            <img class="single__art" src="../assets/img/singles/this-kind-of-love.jpg" alt="Love In Remission cover art"
               width="160" height="160" loading="lazy" />
             <div class="single__card">
               <div class="single__row">
@@ -420,7 +422,7 @@
             </div>
           </li>
           <li class="single" data-src="">
-            <img class="single__art" src="assets/img/singles/fatherson.jpg" alt="Fatherson: Wanted cover art"
+            <img class="single__art" src="../assets/img/singles/fatherson.jpg" alt="Fatherson: Wanted cover art"
               width="160" height="160" loading="lazy" />
             <div class="single__card">
               <div class="single__row">
@@ -440,7 +442,7 @@
             </div>
           </li>
           <li class="single" data-src="">
-            <img class="single__art" src="assets/img/singles/fatherson.jpg" alt="Till I’m Dead And Gone cover art"
+            <img class="single__art" src="../assets/img/singles/fatherson.jpg" alt="Till I’m Dead And Gone cover art"
               width="160" height="160" loading="lazy" />
             <div class="single__card">
               <div class="single__row">
@@ -460,7 +462,7 @@
             </div>
           </li>
           <li class="single" data-src="">
-            <img class="single__art" src="assets/img/singles/fatherson.jpg" alt="She Was My Momma cover art" width="160"
+            <img class="single__art" src="../assets/img/singles/fatherson.jpg" alt="She Was My Momma cover art" width="160"
               height="160" loading="lazy" />
             <div class="single__card">
               <div class="single__row">
@@ -480,7 +482,7 @@
             </div>
           </li>
           <li class="single" data-src="">
-            <img class="single__art" src="assets/img/singles/fatherson.jpg" alt="Fathers Footsteps cover art"
+            <img class="single__art" src="../assets/img/singles/fatherson.jpg" alt="Fathers Footsteps cover art"
               width="160" height="160" loading="lazy" />
             <div class="single__card">
               <div class="single__row">
@@ -526,8 +528,8 @@
     </div>
   </footer>
 
-  <script src="js/main.js" defer></script>
-  <script src="js/films.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/films.js" defer></script>
 </body>
 
 </html>
