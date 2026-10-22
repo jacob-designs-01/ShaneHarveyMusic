@@ -27,14 +27,23 @@
   let index = 0;
 
   const src = i => items[i].querySelector('img');
+  const getLargeImgSrc = el => {
+    // Transform thumbnail src to large image src
+    //   ../assets/img/gallery-small/12.webp
+    // → ../assets/img/gallery-large/12.webp
+    return el.src.replace('gallery-small', 'gallery-large');
+  };
   const show = i => {
     index = (i + items.length) % items.length;
     const el = src(index);
-    img.src = el.currentSrc || el.src;
+    img.src = getLargeImgSrc(el);
     img.alt = el.alt;
     count.textContent = `${index + 1} / ${items.length}`;
     // warm the cache for neighbours
-    [index - 1, index + 1].forEach(n => { new Image().src = src((n + items.length) % items.length).src; });
+    [index - 1, index + 1].forEach(n => {
+      const neighbor = src((n + items.length) % items.length);
+      new Image().src = getLargeImgSrc(neighbor);
+    });
   };
   const open = i => {
     show(i);
