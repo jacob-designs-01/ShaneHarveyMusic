@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        // Instantly redirects to the root relative homepage
+        window.location.replace(window.location.origin + window.location.pathname.split('/')[1] === 'your-repo-name' ? '/your-repo-name/' : '/');
+    </script>
+</head>
+<body>
+    <p>Page not found. Redirecting to home...</p>
+</body>
+</html>
