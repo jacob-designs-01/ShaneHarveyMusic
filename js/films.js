@@ -1,6 +1,6 @@
 // Film clip lightbox (Film & TV page) — no next/prev between clips
 (() => {
-  const clips = [...document.querySelectorAll('.film-card__clip, .single__link')];
+  const clips = [...document.querySelectorAll('.film-card__clip:not(.external), .single__link:not(.external)')];
   if (!clips.length) return;
 
   const ICON_CLOSE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>';

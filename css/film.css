@@ -14,8 +14,9 @@
 }
 .film-card__cues .track { width: 100%; }
 .track--cue { box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
-.film-card__clip { color: var(--accent); text-decoration: underline; text-underline-position: from-font; }
+.film-card__clip { display: inline-flex; align-items: center; justify-content: center; gap: 4px; color: var(--accent); text-decoration: underline; text-underline-position: from-font; }
 .film-card__clip:hover { filter: brightness(1.2); }
+.film-card__clip svg { width: 18px; height: 18px; flex: none; }
 
 .lightbox--film .lightbox__media {
   width: min(92vw, 1400px, calc((100dvh - 96px) * 16 / 9));
