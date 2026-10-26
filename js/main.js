@@ -167,7 +167,7 @@ const CONTACT = {
   phone: '+48 577 953 260',
   email: 'shaneharveymusic@gmail.com',
   website: 'shaneharveymusic.com',
-  linkedin: 'linkedin.com/in/shane-harvey-8297a163',
+  linkedin: 'shane-harvey-8297a163',
   bluesky: '@shaneharvey.bsky.social',
 };
 
@@ -193,7 +193,7 @@ function saveVcard() {
     'BEGIN:VCARD', 'VERSION:3.0',
     `FN:${c.name}`, `N:${c.name.split(' ').reverse().join(';')};;;`,
     `TITLE:${c.role}`, `TEL:${c.phone}`, `EMAIL:${c.email}`,
-    `URL:https://${c.website}`, `URL:https://${c.linkedin}`, `URL:https://bsky.app/profile/${c.bluesky.replace('@', '')}`,
+    `URL:https://${c.website}`, `URL:https://linkedin.com/in/${c.linkedin}`, `URL:https://bsky.app/profile/${c.bluesky.replace('@', '')}`,
     'END:VCARD',
   ];
   const url = URL.createObjectURL(new Blob([lines.join('\r\n')], { type: 'text/vcard' }));
@@ -210,7 +210,7 @@ function buildContact() {
     ['Phone', c.phone, `tel:${c.phone.replace(/[^+\d]/g, '')}`, ''],
     ['Email', c.email, `mailto:${c.email}`, ''],
     ['Website', c.website, `https://${c.website}`, ' target="_blank" rel="noopener"'],
-    ['LinkedIn', c.linkedin, `https://${c.linkedin}`, ' target="_blank" rel="noopener"'],
+    ['LinkedIn', c.linkedin, `https://linkedin.com/in/${c.linkedin}`, ' target="_blank" rel="noopener"'],
     ['Bluesky', c.bluesky, `https://bsky.app/profile/${c.bluesky.replace('@', '')}`, ' target="_blank" rel="noopener"'],
   ];
   const d = document.createElement('dialog');
