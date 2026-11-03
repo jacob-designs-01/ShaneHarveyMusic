@@ -221,7 +221,7 @@ function buildContact() {
       <button class="contact-card__close" type="button" data-close aria-label="Close">${X_ICON}</button>
       <div class="contact-card__banner">
         <div class="media-fade contact-card__media">
-          <img src="../assets/img/contact-portrait.jpg" alt="">
+          <img src="../assets/img/contact-portrait2.jpg" alt="" style="object-position: 50% 20%;">
         </div>
       </div>
       <div class="contact-card__body">
